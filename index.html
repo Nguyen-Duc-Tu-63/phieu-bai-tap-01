@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CampusMart - Catalog (Buoi 1)</title>
 </head>
 <body>
-    
+    <header>
+        <h1 data-testid="cm-brand">CampusMart</h1>
+
+        <nav data-testid="cm-nav">
+            <ul>
+                <li><a href="#">Trang chu</a></li>
+                <li><a href="#">San Pham</a></li>
+                <li><a href="#">Gioi thieu</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Danh muc</h2>
+            <ul data-testid="cm-category-list">
+                <li>Ban phim</li>
+                <li>Chuot</li>
+                <li>Man hinh</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Danh sach san pham</h2>
+            <table data-testid="cm-product-table" border="1">
+                <thead>
+                    <tr>
+                        <th>SKU</th>
+                        <th>Name</th>
+                        <th>Danh muc (chữ)</th>
+                        <th>Price</th>
+                        <th>QTY</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr data-testid="cm-product-row" data-sku="KB-01">
+                        <td>KB-01</td>
+                        <td>Keychron K2</td>
+                        <td>Ban phim</td>
+                        <td>1890000</td>
+                        <td>3</td>
+                    </tr>
+
+                     <tr data-testid="cm-product-row" data-sku="KB-02">
+                        <td>KB-02</td>
+                        <td>Akko 3087 K2</td>
+                        <td>Ban phim</td>
+                        <td>1290000</td>
+                        <td>5</td>
+                    </tr>
+
+                     <tr data-testid="cm-product-row" data-sku="MS-01">
+                        <td>MS-01</td>
+                        <td>Logitech M331</td>
+                        <td>Chuot</td>
+                        <td>290000</td>
+                        <td>10</td>
+                    </tr>
+
+                     <tr data-testid="cm-product-row" data-sku="MS-02">
+                        <td>MS-02</td>
+                        <td>Razer Viper</td>
+                        <td>Chuot</td>
+                        <td>990000</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nguyen Duc Tu</p>
+    </footer>
 </body>
 </html>
